@@ -1,5 +1,4 @@
 import React from 'react'
-import { useRouter } from 'next/router'
 import { styled } from '@mui/styles'
 import { Drawer, Link, MenuItem, Stack } from '@mui/material'
 import useMedia from '../../../hooks/useMedia'
@@ -12,7 +11,6 @@ const Container = styled('div')(({ theme }) => ({
   display: 'flex',
   justifyContent: 'flex-start',
   '& > *': {
-    width: theme.spacing(20),
     textAlign: 'center',
     borderRadius: 0
   },
@@ -24,7 +22,6 @@ const Container = styled('div')(({ theme }) => ({
 }))
 
 const NavLink = ({ path, text }) => {
-  const pathName = useRouter().pathname
   return <Link href={path} underline={'none'} textAlign={'center'}>
     <MenuItem>{text}</MenuItem>
   </Link>

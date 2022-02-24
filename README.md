@@ -1,2 +1,2 @@
-# blog-ui
-blog-ui
+# board-games-ui
+board-games-ui
